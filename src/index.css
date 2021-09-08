@@ -1,0 +1,108 @@
+body {
+  font: 24px 'Century Gothic', Futura, sans-serif;
+  margin: 20px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 9rem;
+  line-height: 34px;
+  color: #3a3f41;
+  height: 10rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 10rem;
+}
+
+@media screen and (max-width: 650px) {
+  .square {
+    width: 5rem;
+    height: 5rem;
+  }
+  .player-names {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.square--green {
+  background: green;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-info {
+  width: 100%;
+}
+
+.button {
+  background-color: #555555; /* Green */
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.new-game-button {
+  background-color: #1d5ca6;
+  color: #000;
+  font-weight: bold;
+
+}
+
+.player-names {
+  margin-bottom: 5rem;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.new-game-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
