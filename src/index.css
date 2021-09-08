@@ -39,6 +39,7 @@ ul {
   .square {
     width: 5rem;
     height: 5rem;
+    font-size: 4rem;
   }
   .player-names {
     margin-bottom: 0.5rem;
